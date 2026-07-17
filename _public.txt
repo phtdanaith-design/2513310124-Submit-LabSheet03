@@ -1,0 +1,45 @@
+public class TestLinkedList {
+
+    public static void main(String[] args) {
+
+        LinkedList list = new LinkedList();
+
+        // Exercise 1 : traversal()
+        System.out.println("Exercise 1");
+        System.out.println(list.traversal());
+
+        // Exercise 2 : insert(position, value)
+        System.out.println("\nExercise 2");
+        list.insert(0, 37);
+        list.insert(0, 7);
+        list.insert(0, 4);
+        list.insert(0, 16);
+        System.out.println(list.traversal());
+
+        // Exercise 3 : insert(position, value)
+        System.out.println("\nExercise 3");
+        list.insert(2, 20);
+        System.out.println(list.traversal());
+
+        // Exercise 4 : insert(value)
+        System.out.println("\nExercise 4");
+        list.insert(25);
+        System.out.println(list.traversal());
+
+        // Exercise 5 : remove(position)
+        System.out.println("\nExercise 5");
+        list.remove(0);
+        System.out.println(list.traversal());
+
+        // Exercise 6 : remove(position)
+        System.out.println("\nExercise 6");
+        list.remove(2);
+        System.out.println(list.traversal());
+
+        // Exercise 7 : removeLastElement()
+        System.out.println("\nExercise 7");
+        list.removeLastElement();
+        System.out.println(list.traversal());
+
+    }
+}

@@ -1,0 +1,45 @@
+public class TrainLinkedList {
+
+    public static void main(String[] args) {
+
+        LinkedList stations = new LinkedList();
+
+        // เพิ่มสถานี
+        stations.insert("Khu Khot");
+        stations.insert("Yaek Kor Por Aor");
+        stations.insert("Royal Thai Air Force Museum");
+        stations.insert("Bhumibol Adulyadej Hospital");
+        stations.insert("Saphan Mai");
+        stations.insert("Sai Yud");
+        stations.insert("Phahon Yothin 59");
+        stations.insert("Wat Phra Sri Mahathat");
+        stations.insert("11th Infantry Regiment");
+        stations.insert("Bang Bua");
+
+        System.out.println("Green Line Stations");
+        System.out.println(stations.traversal());
+
+        // แทรกสถานี
+        stations.insert(5, "New Station");
+        System.out.println("\nAfter Insert:");
+        System.out.println(stations.traversal());
+
+        // ลบสถานี
+        stations.remove(2);
+        System.out.println("\nAfter Remove Index 2:");
+        System.out.println(stations.traversal());
+
+        // แก้ไขชื่อสถานี
+        stations.set(0, "Khu Khot Station");
+        System.out.println("\nAfter Update:");
+        System.out.println(stations.traversal());
+
+        // จำนวนสถานี
+        System.out.println("\nNumber of Stations = " + stations.length());
+
+        // แสดงสถานีตามตำแหน่ง
+        System.out.println("Station at Index 3 = " + stations.get(3));
+
+    }
+
+}
